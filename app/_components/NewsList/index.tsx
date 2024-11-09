@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import styles from "./index.module.css";
-import { Name } from "@/app/_libs/microcms";
+import { News } from "@/app/_libs/microcms";
 
 
 
