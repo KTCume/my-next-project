@@ -28,7 +28,7 @@ const data: {
       },  
       {
         id: "2",
-        title: "当選CEOgs業界リーダーに選出されました",
+        title: "当選CEOgs業界リーダーTOP30に選出されました",
         category: {
           name: "更新情報",
         },
