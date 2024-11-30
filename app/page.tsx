@@ -8,7 +8,7 @@ import { News } from "@/app/_libs/microcms";
 
 const data: {
   contents: News[] } = {
-    contents: [
+    contents: [       
       {
         id: "1",
         title:
