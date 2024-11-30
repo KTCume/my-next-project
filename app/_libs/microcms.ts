@@ -1,4 +1,4 @@
-expoet type Category = {
+export type Category = {
     name: string;
 }
 
@@ -8,6 +8,6 @@ export type News = {
     category: {
         name: string;
     };
-    publisheAt: string;
+    publishedAt: string;
     createdAt: string;
 }

@@ -31,7 +31,7 @@ export default function NewsList({ news }: Props) {
                             <dt className={styles.title}>{article.title}</dt>
                             <dd className={styles.meta}>
                                 <Category category={article.category} />
-                                <Date date={article.pblisheAt ??
+                                <Date date={article.publishedAt ??
                                     article.createdAt} /> 
                             </dd>
                         </dl>
