@@ -39,8 +39,9 @@ const client = createClient({
     apiKey: process.env.MICROCMS_API_KEY,
 });
 
-export const getMembersList = async (queries?: MicroCMSQuerise) => {
-    const listData = await client.getList<Member>({
+export const getMembersList = async (queries?: MicroCMSQueries) => {
+    const listData = await client
+    .getList<Member>({
         endpoint: "members",
         queries,
     });
