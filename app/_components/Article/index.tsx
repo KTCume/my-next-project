@@ -21,7 +21,7 @@ export default function Article({ data }: Props) {
                 >
                 <Category category={data.category} />
                 </Link>
-                <Date date={data.publishedAt || data.createdAt} />
+                <Date date={data.publishedAt ?? data.createdAt} />
             </div>
             {data.thumbnail && (
                 <Image
