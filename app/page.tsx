@@ -6,8 +6,6 @@ import NewsList from "@/app/_components/NewsList";
 import ButtonLink from "@/app/_components/ButtonLink";
 
 
-
-
 export default async function Home() {
   const data = await getNewsList({
     limit: TOP_NEWS_LIMIT,
