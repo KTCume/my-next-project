@@ -1,4 +1,4 @@
-import { NextRequest,NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 export function middleware(request: NextRequest) {
     console.log("middleware: " + request.url);
@@ -6,4 +6,6 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
 }
 
-export const config = {};
+export const config = {
+    matcher: ["/about/:path*", "dashboard/:path*"],
+};
