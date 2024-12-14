@@ -44,6 +44,12 @@ export async function createContactData(_prevState: any, formData: FormData) {
             message: "メッセージを入力してください",
         };
     }
+    const result = await fetch(
+        "https://api.hsforms.com/submissions/v3/integration/submit/${process.env.HUBSPOT_PORTAL_ID}/${pocess.env.HUBSPOT_FORM_ID}",
+        {
+            method: "POST",
+        }
+    )
 
     return { status: "success", message: "OK" };
 }
